@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-15T11:58:30.096Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="yYOald6hI0jCypITxRfX" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-18T04:44:02.158Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="_vBYZE5hWidzmc99LONL" version="15.7.3" type="github">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="999" dy="1828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -89,10 +89,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-22" value="mpoller_add(poller_data *data)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="981" y="-450" width="260" height="60" as="geometry" />
+          <mxGeometry x="990" y="-585" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-23" value="poller_add(data)&lt;br&gt;这个函数会去设置poller-&amp;gt;nodes[data-&amp;gt;fd] = node" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="579" y="-430" width="280" height="50" as="geometry" />
+          <mxGeometry x="560" y="-580" width="280" height="50" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="rVw1OEeZTjNzLkuWisMM-25" target="rVw1OEeZTjNzLkuWisMM-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -125,13 +125,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-37" value="Communicator::handle_write_result()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="-270" width="260" height="60" as="geometry" />
+          <mxGeometry x="990" y="-350" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="rVw1OEeZTjNzLkuWisMM-40" target="rVw1OEeZTjNzLkuWisMM-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-40" value="Communicator::handle_requst_result()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="990" y="-360" width="260" height="60" as="geometry" />
+          <mxGeometry x="990" y="-460" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="rVw1OEeZTjNzLkuWisMM-44" target="rVw1OEeZTjNzLkuWisMM-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -151,8 +151,11 @@
         <mxCell id="rVw1OEeZTjNzLkuWisMM-48" value="__poller_thread_routine" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="220" width="160" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ftpm7USZJNCDRJdaPMFI-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rVw1OEeZTjNzLkuWisMM-50" target="ftpm7USZJNCDRJdaPMFI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rVw1OEeZTjNzLkuWisMM-50" value="msgqueue_get()阻塞等" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="1140" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qG6JJeZcO3LpD5vR7bbc-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rVw1OEeZTjNzLkuWisMM-52" target="qG6JJeZcO3LpD5vR7bbc-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -214,6 +217,15 @@
               <mxPoint x="1070" y="-160" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ftpm7USZJNCDRJdaPMFI-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ftpm7USZJNCDRJdaPMFI-9" target="ftpm7USZJNCDRJdaPMFI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpm7USZJNCDRJdaPMFI-9" value="handle_listen_result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="-70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ftpm7USZJNCDRJdaPMFI-11" value="mpoller_add()&lt;br&gt;PD_OP_READ&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="-210" width="250" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
