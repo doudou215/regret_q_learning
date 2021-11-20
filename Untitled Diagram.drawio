@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-20T01:35:23.923Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="3jNKmGIyGW_6FdtqFQub" version="15.7.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-11-20T02:52:05.774Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="oVCsTMJGRerPDymRkwMK" version="15.7.3" type="github" pages="3">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="1239" dy="1828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -385,6 +385,9 @@
         </mxCell>
         <mxCell id="LVIaFcm2suLai71p99P7-38" value="__poller_connect_result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry x="960" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="doJFKUH1AEkqxWNGpCXi-4" value="Session-&amp;gt;handle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="1210" y="160" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
