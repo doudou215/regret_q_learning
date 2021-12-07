@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T12:47:32.456Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="6sfPtoqgcAGdXqxMu0fb" version="15.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-07T10:40:23.109Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="_bH7etd-u9CgOfHs9tCW" version="15.8.8" type="github" pages="3">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="1171" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -407,6 +407,11 @@
         <mxCell id="CnaVRin-LjYnLtX3lr9M-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="_z8iY30ZNr28YFYZrntx-1" target="u5Gx3-ZK8Kb-1OgPcnSI-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Vqa7hCjYfwnyD9ieT1uV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="_z8iY30ZNr28YFYZrntx-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_z8iY30ZNr28YFYZrntx-1" value="poller-&amp;gt;create_message&lt;br&gt;实际调用&lt;br&gt;Communicator::create_message&lt;br&gt;最终返回的是session-&amp;gt;in，而session-&amp;gt;in = session-&amp;gt;CommessageIn&lt;br&gt;所以返回的是个HttpRequest&lt;br&gt;返回的是个__poller_message类型，又是个多态" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
           <mxGeometry x="710" y="360" width="190" height="160" as="geometry" />
         </mxCell>
@@ -419,8 +424,13 @@
         <mxCell id="u5Gx3-ZK8Kb-1OgPcnSI-3" value="service-&amp;gt;new_session&lt;br&gt;多态&lt;br&gt;创建一个http任务&lt;br&gt;其中HttpServerTask采用的是HttpMessage，即它的两个泛型为HttpRequest和HttpResponse，注意下，ServerTask的MessageIn为request，out为response" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
           <mxGeometry x="700" y="710" width="210" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="Vqa7hCjYfwnyD9ieT1uV-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Cv52yQQvrk0d6INJWvEM-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Cv52yQQvrk0d6INJWvEM-1" value="poller-&amp;gt;cb=Communicator::callback" style="html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
-          <mxGeometry x="1036" y="400" width="205" height="70" as="geometry" />
+          <mxGeometry x="1036" y="405" width="205" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CnaVRin-LjYnLtX3lr9M-0" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -475,6 +485,26 @@
         </mxCell>
         <mxCell id="Vqa7hCjYfwnyD9ieT1uV-16" value="poller_message_t" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry x="140" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vqa7hCjYfwnyD9ieT1uV-20" value="poller_read_result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="1350" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hwl5LSmtlTgBJ-6tKpxO-0" value="WFTask.h&lt;br&gt;任务基类" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="270" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hwl5LSmtlTgBJ-6tKpxO-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hwl5LSmtlTgBJ-6tKpxO-1" target="Hwl5LSmtlTgBJ-6tKpxO-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hwl5LSmtlTgBJ-6tKpxO-1" value="HttpTaskImpl.cc&lt;br&gt;任务子类（具体任务）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="110" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hwl5LSmtlTgBJ-6tKpxO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hwl5LSmtlTgBJ-6tKpxO-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hwl5LSmtlTgBJ-6tKpxO-2" value="HttpMessage.h&lt;br&gt;任务的泛型参数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="414" y="1260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
