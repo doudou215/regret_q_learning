@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T12:51:07.894Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="u3dL2fkWNBgscGHNTijR" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-15T11:49:34.542Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="4ZWFZqaV8FcREoPbnOo3" version="15.9.4" type="github" pages="3">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="1171" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -563,14 +563,13 @@
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-18" value="主要是创建任务流serieswork，并将WFServerTask挂在serieswork上。然后调用processor-&amp;gt;dispatch" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
           <mxGeometry x="1885" y="810" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="YELj7CqIAwVO0b2_EtrJ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="LVIaFcm2suLai71p99P7-1" source="YELj7CqIAwVO0b2_EtrJ-20" target="YELj7CqIAwVO0b2_EtrJ-22" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="YELj7CqIAwVO0b2_EtrJ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="LVIaFcm2suLai71p99P7-1" source="YELj7CqIAwVO0b2_EtrJ-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2205" y="804" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-20" value="processor-&amp;gt;dispatch" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
           <mxGeometry x="2125" y="680" width="160" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="YELj7CqIAwVO0b2_EtrJ-22" value="1. 会真正调用process函数，处理任务。&lt;br&gt;2.然后将serieswork上的task任务弹出。&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
-          <mxGeometry x="2127.5" y="804" width="155" height="90" as="geometry" />
         </mxCell>
         <mxCell id="kUfDnUCTz3M8DCPo596T-0" value="Series" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry x="1700" y="980" width="140" height="106" as="geometry" />
@@ -611,6 +610,15 @@
             <mxPoint x="1540" y="1060" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="kUfDnUCTz3M8DCPo596T-10" target="kUfDnUCTz3M8DCPo596T-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-10" value="1. 调用callback&lt;br&gt;&amp;nbsp; &amp;nbsp;2. subtask_done" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="2145" y="805" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-11" value="subtask_done&lt;br&gt;函数的逻辑主要是通过cur-&amp;gt;done弹出下个任务，然后下个任务也会调用dispatch函数，继续这个过程。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="2370" y="745" width="235" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
