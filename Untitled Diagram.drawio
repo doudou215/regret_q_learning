@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-15T11:49:34.542Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="4ZWFZqaV8FcREoPbnOo3" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-20T11:25:10.269Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="YgzfDAv94uk9yNIV-Yr6" version="15.9.4" type="github" pages="3">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="1171" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -311,7 +311,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0phF3T7eXeOVNw2tyM6r" name="Page-3">
-    <mxGraphModel dx="1171" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1673" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="LVIaFcm2suLai71p99P7-0" />
         <mxCell id="LVIaFcm2suLai71p99P7-1" parent="LVIaFcm2suLai71p99P7-0" />
@@ -546,7 +546,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-11" value="Processor" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
-          <mxGeometry x="1230" y="804" width="120" height="60" as="geometry" />
+          <mxGeometry x="1036" y="786" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="LVIaFcm2suLai71p99P7-1" source="YELj7CqIAwVO0b2_EtrJ-12" target="YELj7CqIAwVO0b2_EtrJ-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -558,7 +558,7 @@
           <mxGeometry x="1430" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-16" value="SubTask" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
-          <mxGeometry x="1230" y="664" width="120" height="60" as="geometry" />
+          <mxGeometry x="1145" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YELj7CqIAwVO0b2_EtrJ-18" value="主要是创建任务流serieswork，并将WFServerTask挂在serieswork上。然后调用processor-&amp;gt;dispatch" style="rounded=0;whiteSpace=wrap;html=1;" parent="LVIaFcm2suLai71p99P7-1" vertex="1">
           <mxGeometry x="1885" y="810" width="160" height="70" as="geometry" />
@@ -619,6 +619,18 @@
         </mxCell>
         <mxCell id="kUfDnUCTz3M8DCPo596T-11" value="subtask_done&lt;br&gt;函数的逻辑主要是通过cur-&amp;gt;done弹出下个任务，然后下个任务也会调用dispatch函数，继续这个过程。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry x="2370" y="745" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="kUfDnUCTz3M8DCPo596T-13" target="YELj7CqIAwVO0b2_EtrJ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-13" value="ParallelTask" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="1230" y="786" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="kUfDnUCTz3M8DCPo596T-15" target="kUfDnUCTz3M8DCPo596T-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kUfDnUCTz3M8DCPo596T-15" value="ParallelWork" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="1230" y="926" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
