@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T07:17:22.100Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="-ml5C9DXS_5LpP5b_Ffg" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-27T05:00:39.303Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="03682RKgVGX5dWaiTCB5" version="15.9.4" type="github" pages="3">
   <diagram id="JFT-c8hmfohcsFkSbyDH" name="Page-1">
     <mxGraphModel dx="1171" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -311,7 +311,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0phF3T7eXeOVNw2tyM6r" name="Page-3">
-    <mxGraphModel dx="1378" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1018" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="LVIaFcm2suLai71p99P7-0" />
         <mxCell id="LVIaFcm2suLai71p99P7-1" parent="LVIaFcm2suLai71p99P7-0" />
@@ -631,6 +631,39 @@
         </mxCell>
         <mxCell id="kUfDnUCTz3M8DCPo596T-15" value="ParallelWork" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
           <mxGeometry x="1230" y="926" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.567;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hg9CMhbEMJ7RBPHZS8oV-0" target="Hg9CMhbEMJ7RBPHZS8oV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hg9CMhbEMJ7RBPHZS8oV-0" target="Hg9CMhbEMJ7RBPHZS8oV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-0" value="CommRequest" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="780" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-1" value="SubTask&lt;br&gt;最主要的实现规定了两个接口&lt;br&gt;一个是done，另外一个是dispatch&lt;br&gt;在本身的subtask_done函数中会先调用done函数，done函数会取出任务流的下一个任务，然后dispatch函数则是负责执行具体的处理任务的逻辑&lt;br&gt;&lt;b&gt;正常来说，先调用dispatch处理自己的业务逻辑，然后调用subtask_done去处理任务流的下一个任务&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="600" y="910" width="220" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-2" value="CommSession" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="870" y="1026" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hg9CMhbEMJ7RBPHZS8oV-5" target="Hg9CMhbEMJ7RBPHZS8oV-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-5" value="WFNetworkTask&lt;br&gt;这个类中主要是包含了一些状态值&lt;br&gt;规定了get_connection接口" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="780" y="1240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hg9CMhbEMJ7RBPHZS8oV-7" target="Hg9CMhbEMJ7RBPHZS8oV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-7" value="WFServerTask" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="680" y="1410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="LVIaFcm2suLai71p99P7-1" source="Hg9CMhbEMJ7RBPHZS8oV-8" target="Hg9CMhbEMJ7RBPHZS8oV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9CMhbEMJ7RBPHZS8oV-8" value="WFClientTask" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LVIaFcm2suLai71p99P7-1">
+          <mxGeometry x="890" y="1410" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
